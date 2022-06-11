@@ -1,0 +1,262 @@
+/* The next line was required, however it seems not to be required anymore */
+/* @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); */
+
+/* Custom properties */
+:root {
+  --highlight-color: Aqua;
+  --highlight-color-attachments: #00ff008a;
+  --highlight-color-unread: #00ff008a;
+}
+
+
+/* Set a default font and font-style */
+* {
+  font-size: 14pt !important;
+  font-weight: bold !important;
+}
+
+/*
+  # Following all rules for the main window
+*/
+
+
+/* 
+  ## Styles for the Tab Bar
+*/
+
+/* Icons for the calendar and the tasks */
+#tabbar-toolbar {
+  display: none !important;
+}
+
+/* 
+  ## Styles for the Mail Toolbar
+*/
+
+/* The Write Button to Compose a new Message */
+#button-newmsg {
+  background-color: var(--highlight-color);
+}
+
+
+/* 
+  ## Styles for the Mail View Panel
+*/
+
+
+/* Element that shows the Reply-To Address */
+#expandedreply-toRow {
+  display: none !important;
+}
+
+/* Archive button */
+#hdrArchiveButton {
+  display: none !important;
+}
+
+/* Mark as Junk button */
+#hdrJunkButton {
+  display: none !important;
+}
+
+/* More button */
+#otherActionsButton {
+  display: none !important;
+}
+
+/* 
+  ### Styles for the Attachment Panel
+*/
+
+/* View for all regarding the attachments */
+#attachmentView {
+  border: 4px solid var(--highlight-color-attachments) !important;
+}
+
+/* The part of the attachments that can be expanded */
+#attachmentBar {
+  -moz-appearance: none !important;
+  background-color: var(--highlight-color-attachments) !important;
+  font-weight: bold !important;
+}
+
+/* Attachments Name displayed in the expandable section (only shown if there is only one attachment). The name is shown also when expanded */
+#attachmentName {
+  display: none !important;
+}
+
+/* Size of all attachments displayed in the expandable section. The size is shown for each attachment also when expanded */
+#attachmentSize {
+  display: none !important;
+}
+
+/* Size of individual attachments */
+.attachmentcell-size {
+  display: none !important;
+}
+
+/* 
+  ## Styles for the Mail List Panel
+*/
+
+/* The style for unread emails */
+#threadTree treechildren::-moz-tree-cell(unread) {
+  -moz-appearance: none !important;
+  background-color: var(--highlight-color-unread) !important;
+  font-weight: bold !important;
+}
+
+/*
+  # Following all rules for the compose window
+*/
+
+/* The row containing the dropdown menu to choose the senders address, and the CC and BCC buttons */
+#top-gradient-box {
+  display: none !important;
+}
+
+/* Before each of the "from", "to", "subject", ... rows, there is a lot of empty space. */
+.aw-firstColBox {
+  display: none !important;
+}
+
+/* The labels for "from", "to", "subject",  ... rows are quite wide so there is a lot of empty space that can be reduced. */
+#subjectLabel-box .address-label-container {
+  width: 5em !important;
+}
+
+/* Button to send a composed email */
+#button-send {
+  background-color: var(--highlight-color);
+}
+
+/* 
+  ## Styles for the Formatting Bar
+*/
+
+/* If you don't want to hide the Formatting Bar entirely
+ it might be good to disable the unnecessary formatting elements */
+
+/* Button to select the type of paragraph */
+#ParagraphSelect {
+  display: none !important;
+}
+
+/* Button to choose the font */
+#FontFaceSelect {
+  display: none !important;
+}
+
+/* Buttons to choose the fore and background colors */
+#color-buttons-container {
+  display: none !important;
+}
+
+/* Button to set a specific font size */
+#AbsoluteFontSizeButton {
+  display: none !important;
+}
+
+/* Button to decrease the font size */
+#DecreaseFontSizeButton {
+  display: none !important;
+}
+
+/* Button to increase the font size */
+#IncreaseFontSizeButton {
+  display: none !important;
+}
+
+/* Button to make text bold */
+/*
+#boldButton {
+   display: none !important;
+}
+*/
+#boldButton:after {
+  content: "Fett";
+  font-weight: bold;
+}
+
+/* Button to make text italic */
+/*
+#italicButton {
+   display: none !important;
+}
+*/
+#italicButton:after {
+  content: "Kursiv";
+  font-weight: bold;
+}
+
+/* Button to underline text*/
+/*
+#underlineButton {
+   display: none !important;
+}
+*/
+#underlineButton:after {
+  content: "Unterstrichen";
+  font-weight: bold;
+}
+
+/* Button to remove all styles */
+#removeStylingButton {
+  display: none !important;
+}
+
+/* Button to create dotted list */
+#ulButton {
+  display: none !important;
+}
+
+/* Button to created numbered list */
+#olButton {
+  display: none !important;
+}
+
+/* Button to outdent the text */
+#outdentButton {
+  display: none !important;
+}
+
+/* Button to indent the text */
+#indentButton {
+  display: none !important;
+}
+
+/* Button to set the alignment of the text */
+#AlignPopupButton {
+  display: none !important;
+}
+
+/* Button to attach an image/link/table */
+#InsertPopupButton {
+  display: none !important;
+}
+
+/* Button to add a smiley */
+#smileButtonMenu {
+  display: none !important;
+}
+
+/* Vertical lines to separate parts of the Formatting bar visually  */
+#FormatToolbar>toolbarseparator {
+  display: none !important;
+}
+
+/* 
+  ## Styles for the Contacts Sidebar
+*/
+
+/* Contacts Sidebar */
+
+/* The x to close the contacts sidebar */
+#sidebarCloseButton {
+  display: none !important;
+}
+
+/* All children of the contacts sidebar except the list of contacts */
+#results_box>*:not(#abResultsTree) {
+  display: none !important;
+}
