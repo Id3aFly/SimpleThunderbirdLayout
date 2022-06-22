@@ -99,7 +99,7 @@
   ## Styles for the Mail List Panel
 */
 
-/* The style for unread emails */
+/* The style for unread e-mails */
 #threadTree treechildren::-moz-tree-cell(unread) {
   -moz-appearance: none !important;
   background-color: var(--highlight-color-unread) !important;
@@ -110,7 +110,7 @@
   # Following all rules for the compose window
 */
 
-/* The row containing the dropdown menu to choose the senders address, and the CC and BCC buttons */
+/* The row containing the dropdown menu to choose the sender's address, and the CC and BCC buttons */
 #top-gradient-box {
   display: none !important;
 }
@@ -125,7 +125,7 @@
   width: 5em !important;
 }
 
-/* Button to send a composed email */
+/* Button to send a composed e-mail */
 #button-send {
   background-color: var(--highlight-color);
 }
@@ -134,7 +134,7 @@
   ## Styles for the Formatting Bar
 */
 
-/* If you don't want to hide the Formatting Bar entirely
+/* If you don't want to hide the Formatting Bar entirely,
  it might be good to disable the unnecessary formatting elements */
 
 /* Button to select the type of paragraph */
@@ -210,7 +210,7 @@
   display: none !important;
 }
 
-/* Button to created numbered list */
+/* Button to create numbered list */
 #olButton {
   display: none !important;
 }
@@ -256,7 +256,7 @@
   display: none !important;
 }
 
-/* All children of the contacts sidebar except the list of contacts */
+/* All child elements of the contacts sidebar except the list of contacts */
 #results_box>*:not(#abResultsTree) {
   display: none !important;
 }
