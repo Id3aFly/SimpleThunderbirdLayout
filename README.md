@@ -120,6 +120,7 @@ There are 5 different toolbars for Thunderbird's main window. However, only the 
 The Menu Bar gives quicker access to the main menu that can be shown by pressing the Alt key once.  
 The Folder Panel Toolbar allows to change the folder's type shown in the folder panel.  
 The Quick Filter Bar shows a bar to allow quick filtering of mails.  
+The Spaces Bar is the vertical bar at the left side of Thunderbird for quick access to calendar, contacts, ... (only in versions >= TB 102)
 The status bar shows a bar at the bottom of the window with the online/offline state and the count of currently read/unread mails.  
 
 - To hide any of these toolbars press the **"Alt" key once** to make the menu bar appear at the top. Now click **View**, **Toolbars** and deselect the desired toolbar.

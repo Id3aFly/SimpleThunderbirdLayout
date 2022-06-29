@@ -24,8 +24,14 @@
   ## Styles for the Tab Bar
 */
 
-/* Icons for the calendar and the tasks */
+/* Icons for the calendar and the tasks (only before TB 102) */
 #tabbar-toolbar {
+  display: none !important;
+}
+
+
+/* Icon of the space-toolbar-button which is displayed when hiding/collapsing the spaces menu bar (starting with TB 102) */
+#spacesPinnedButton {
   display: none !important;
 }
 
